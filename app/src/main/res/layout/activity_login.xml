@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.princewillohuabunwa.loginapp.Login"
+    android:clickable="false"
+    android:visibility="visible"
+    android:background="@drawable/graphics">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:id="@+id/topBar"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_text"
+                android:id="@+id/button"
+                android:background="#ffa19c13"
+                android:textColor="#ffffff"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/textFieldHolder"
+            android:layout_weight="1">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:inputType="textEmailAddress"
+                android:id="@+id/etUsername"
+                android:hint="@string/username_hint" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:inputType="textPassword"
+                android:id="@+id/etPassword"
+                android:hint="@string/password_hint"
+                android:focusable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"></LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
